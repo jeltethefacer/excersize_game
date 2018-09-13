@@ -1,4 +1,8 @@
 require "./classes/Player.rb"
 
 puts "welcome to the game."
-player = Player.new("jelte", 100, 100)
+print "Please enter your name: "
+name = gets.chomp
+
+player = Player.new(name, 100, 100)
+player.puts

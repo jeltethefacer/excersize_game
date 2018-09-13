@@ -4,4 +4,13 @@ class Player
 		@health = health
 		@armor = armor
 	end
+
+	def puts
+
+	    print <<~HEREDOC
+	      naam: #{@name}
+	      health: #{@health}
+	      armor: #{@armor}
+	    HEREDOC
+	end
 end
